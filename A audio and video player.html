@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple audio and video player using HTML5 elements.">
+    <title>HTML Audio and Video Lab</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+        background-color: #f4f4;
+        color: yellowgreen;
+      }
+      h1, h2 {
+        color: brown;
+      }
+      video, audio {
+        margin: 10px 0;
+        border: 1px solid #f4f4f4;
+        max-width: 100%;
+      }
+    </style>
+    <script>
+      // JavaScript to enhance user experience
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('Audio and Video Player Loaded');
+        alert('Welcome to the Audio and Video Player Lab!');
+      });
+    </script>
+</head>
+<body>
+  <main>
+    <h1>HTML Audio and Video Player</h1>
+  <section>
+    <h2>Video Playing</h2>
+    <video controls height="240" width="320">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
+      <iframe src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share" referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <section>
+    <h2>Song playing</h2>
+    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" controls loop></audio>
+    <iframe src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share" referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </section>
+  </main>
+</body>
+</html>
